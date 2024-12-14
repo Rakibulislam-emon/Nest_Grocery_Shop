@@ -22,10 +22,10 @@ export default function BottomHeader() {
         <button className="bg-green lg:px-8 rounded-md flex justify-center items-center gap-x-2 ">
           <Image
             alt="menu"
-            src={"/icon.png"}
+            src={"/Icon.png"}
             height={20}
             width={20}
-            className=""
+            className="h-auto w-auto"
           />
           <span className="text-white font-semibold ml-2">
             Browse ALL Category
