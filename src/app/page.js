@@ -4,8 +4,8 @@ import Header from "@/Components/Header/Header";
 import React from "react";
 
 export default function page() {
-  return <Container>
+  return <div>
     <Header/>
     {/* <Banner/> */}
-  </Container>;
+  </div>;
 }
