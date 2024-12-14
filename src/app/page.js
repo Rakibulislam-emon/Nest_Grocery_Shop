@@ -1,11 +1,10 @@
-import Header from '@/Components/Header/Header'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
 export default function page() {
   return (
-    <div>
-      <h1 className='text-center text-4xl'>Hello, Next.js!</h1>
-      <Header/>
-    </div>
-  )
+    <Container>
+      <h1 className="text-5xl">Hello, Next.js!</h1>
+    </Container>
+  );
 }
