@@ -12,7 +12,7 @@ export default function MiddleHeader() {
         <FaHamburger className='text-2xl'/>
       </button>
       <div className='w-full  md:w-auto flex justify-center'>
-        <Image alt='logo' src={'/logo/logo.svg fill.png'} width={150} height={150} className='h-auto w-auto'/>
+        <Image alt='logo' src={'/logo/logo.svg fill.png'} width={150} height={150} />
       </div>
       <div className=' flex-1 flex lg:px-10 gap-x-10'>
         <SearchInput />
