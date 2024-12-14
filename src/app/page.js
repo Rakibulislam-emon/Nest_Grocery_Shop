@@ -1,11 +1,7 @@
-// import Container from "@/Components/Container";
-import Header from "@/Components/Header/Header";
-// import { Banner } from "@/Components/HeroSection/BannerAndCategory/Banner";
-import React from "react";
-
 export default function page() {
-  return <div>
-    <Header/>
-    {/* <Banner/> */}
-  </div>;
+  return (
+    <div>
+      <h1 className="text-4xl text-center bg-black text-white">hello world</h1>
+    </div>
+  );
 }
