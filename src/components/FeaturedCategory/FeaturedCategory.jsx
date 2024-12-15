@@ -43,9 +43,11 @@ export default function FeaturedCategory() {
       : data.filter((item) => item.category === selectedCategory);
 
   return (
-    <section className="max-w-screen-2xl mx-auto lg:h-auto my-10 px-4">
-      <div className="flex justify-between lg:p-8">
-        <h1 className="md:text-4xl text-xl font-bold">Featured Category</h1>
+    <section className="max-w-screen-2xl mx-auto lg:h-auto my-10 md:px-4">
+      <div className=" lg:p-8 md:flex md:items-center md:justify-between ">
+        <h1 className="md:text-4xl text-2xl font-bold lg:text-start text-center py-4 ">
+          Featured Category
+        </h1>
         <CategoryTabs
           categories={categories}
           setSelectedCategory={setSelectedCategory}

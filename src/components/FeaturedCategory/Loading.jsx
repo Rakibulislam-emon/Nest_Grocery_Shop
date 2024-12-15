@@ -31,7 +31,7 @@ import React from 'react'
 
 export default function loader() {
     return (
-      <div className="h-screen flex items-center w-full justify-center">
+      <div className="h-screen flex items-baseline w-full justify-center">
         <p>Loading...</p>
       </div>
     );

@@ -2,9 +2,9 @@ import { Tab, TabGroup, TabList } from "@headlessui/react";
 
 const CategoryTabs = ({ categories, setSelectedCategory }) => {
   return (
-    <TabGroup>
-      <TabList className="flex gap-4">
-       
+    <TabGroup >
+     
+      <TabList className="md:flex gap-4 flex-wrap">
         {categories.map((category, idx) => (
           <Tab
             key={idx}

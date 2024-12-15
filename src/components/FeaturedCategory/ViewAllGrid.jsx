@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ViewAllGrid = ({ data }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 clear-both">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 clear-both">
       {data.map((item, idx) => (
         <div key={idx} className="flex flex-col items-center">
           <Image
