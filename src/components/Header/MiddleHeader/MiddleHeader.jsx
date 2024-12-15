@@ -11,9 +11,15 @@ export default function MiddleHeader() {
       <button className='lg:hidden px-2'>
         <FaHamburger className='text-2xl'/>
       </button>
-      <div className='w-full  md:w-auto flex justify-center'>
-        <Image alt='logo' src={'/logo/logo.svg fill.png'} width={150} height={150} />
-      </div>
+      <div className="w-full md:w-auto flex justify-center">
+      <Image
+        alt="logo"
+        src="/logo/logo.png"
+        width={150}
+        height={150}
+        style={{ width: "auto", height: "auto" }} // Ensures the aspect ratio is maintained
+      />
+    </div>
       <div className=' flex-1 flex lg:px-10 gap-x-10'>
         <SearchInput />
         <div className='lg:flex gap-x-1 items-center border-gray border shadow-md px-2 hidden'>
