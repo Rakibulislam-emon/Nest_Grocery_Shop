@@ -4,12 +4,7 @@ const CategoryTabs = ({ categories, setSelectedCategory }) => {
   return (
     <TabGroup>
       <TabList className="flex gap-4">
-        <Tab
-          className="data-[selected]:bg-green px-4 py-2 rounded-md data-[selected]:text-white data-[hover]:underline"
-          onClick={() => setSelectedCategory("All")}
-        >
-          All
-        </Tab>
+       
         {categories.map((category, idx) => (
           <Tab
             key={idx}
