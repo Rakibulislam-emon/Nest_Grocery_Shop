@@ -1,8 +1,15 @@
 export const fetchFeaturedProducts = async () => {
-    const response = await fetch("http://localhost:3000/api/featured");
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.json();
-  };
+  // Construct the full URL by appending /api/featured to the base API URL
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/api/featured`;
   
+  // Make the fetch request to the constructed URL
+  const response = await fetch(apiUrl);
+  
+  // Check if the response is okay
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  
+  // Return the JSON data from the response
+  return response.json();
+};
