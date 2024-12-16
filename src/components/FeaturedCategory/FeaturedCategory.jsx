@@ -7,6 +7,8 @@ import { fetchFeaturedProducts } from "@/utils/api/fetchFeaturedProducts";
 import FeaturedNavigationButtons from "./NavigationButtons";
 import Loader from "./Loading";
 
+
+
 export default function FeaturedCategory() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -36,7 +38,7 @@ export default function FeaturedCategory() {
   if (loading) return <Loader />;
   if (error) return <div>Error: {error}</div>;
 
-  const categories = ["All", ...new Set(data.map((item) => item.category))];
+  const categories = ["All", ...new Set(data?.map((item) => item.category))];
   const filteredData =
     selectedCategory === "All"
       ? data
@@ -48,10 +50,10 @@ export default function FeaturedCategory() {
         <h1 className="md:text-4xl text-2xl font-bold lg:text-start text-center py-4 ">
           Featured Category
         </h1>
-        <CategoryTabs
+        {/* <CategoryTabs
           categories={categories}
           setSelectedCategory={setSelectedCategory}
-        />
+        /> */}
         <FeaturedNavigationButtons
           prevRef={prevRef}
           nextRef={nextRef}
