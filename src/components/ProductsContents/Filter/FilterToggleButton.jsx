@@ -35,7 +35,7 @@ function FilterToggleButton() {
       <div className="flex justify-end lg:fixed left-0 top-[50vh]">
         <div
           onClick={toggleFilter}
-          className="border p-4 bg-black text-white cursor-pointer sm:block flex gap-x-2 w-32 lg:w-20 lg:rounded-r-3xl justify-center"
+          className="border px-4 l bg-black text-white cursor-pointer sm:block flex gap-x-2 w-32 lg:w-20 lg:rounded-r-3xl justify-center"
         >
           <span className="text-center ">Click To Filter</span>
           <BiFilterAlt className="text-2xl" />

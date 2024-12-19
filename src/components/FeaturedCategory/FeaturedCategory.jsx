@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import CategoryTabs from "./CategoryTabs";
 import ViewAllGrid from "./ViewAllGrid";
 import SwiperView from "./SwiperView";
 import { fetchFeaturedProducts } from "@/utils/api/fetchFeaturedProducts";
@@ -38,16 +37,16 @@ export default function FeaturedCategory() {
   if (loading) return <Loader />;
   if (error) return <div>Error: {error}</div>;
 
-  const categories = ["All", ...new Set(data?.map((item) => item.category))];
+  // const categories = ["All", ...new Set(data?.map((item) => item.category))];
   const filteredData =
     selectedCategory === "All"
       ? data
       : data.filter((item) => item.category === selectedCategory);
 
   return (
-    <section className="max-w-screen-2xl mx-auto lg:h-auto my-10 md:px-4">
-      <div className=" lg:p-8 md:flex md:items-center md:justify-between ">
-        <h1 className="md:text-4xl text-2xl font-bold lg:text-start text-center py-4 ">
+    <section className="max-w-screen-2xl mx-auto lg:h-auto my-10 ">
+      <div className=" lg:py-6 md:flex md:items-center md:justify-between  ">
+        <h1 className="md:text-4xl text-2xl font-bold lg:text-start text-center py-4  ">
           Featured Category
         </h1>
         {/* <CategoryTabs

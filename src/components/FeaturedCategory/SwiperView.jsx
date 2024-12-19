@@ -31,7 +31,7 @@ const SwiperView = ({ data, prevRef, nextRef }) => {
       }}
       className="mySwiper"
     >
-      {data.map((category, idx) => (
+      {data?.map((category, idx) => (
         <SwiperSlide   key={idx} className="flex   flex-col  items-center mt-8">
           {/* Display the category name */}
           <h2 className="text-xl font-semibold">{category.category}</h2>

@@ -2,7 +2,8 @@ import Container from "@/components/Container";
 import FeaturedCategory from "@/components/FeaturedCategory/FeaturedCategory";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/HeroSection/Hero";
-import ProductsContents from "@/components/ProductsContents/ProductsContents";
+import FilterToggleButton from "@/components/ProductsContents/Filter/FilterToggleButton";
+import PopularProducts from "@/components/ProductsContents/PopularProducts/PopularProducts";
 import React from "react";
 
 export default function page() {
@@ -11,7 +12,8 @@ export default function page() {
       <Header/>
       <Hero/>
       <FeaturedCategory/>
-      <ProductsContents/>
+      <FilterToggleButton/>
+      <PopularProducts/>
     </Container>
   );
 }
